@@ -233,7 +233,7 @@
     </div>
   </section>
 
-  <!-- ALL STORE PRODUCTS CATALOG (INTERACTIVE FILTER TABS) -->
+  <!-- ALL STORE PRODUCTS CATALOG (INTERACTIVE FILTER TABS & SVG FALLBACKS) -->
   <section id="all-products" class="py-16 md:py-24 border-b border-[#e5e5ea] bg-white">
     <div class="max-w-7xl mx-auto px-4 md:px-8 space-y-10">
       
@@ -262,7 +262,7 @@
         <button onclick="filterProducts('accessories')" class="filter-btn" id="btn-accessories">إكسسوارات وجرابات</button>
       </div>
 
-      <!-- PRODUCTS GRID (DYNAMICALLY FILTERABLE) -->
+      <!-- PRODUCTS GRID (DYNAMICALLY FILTERABLE WITH SVG FALLBACKS) -->
       <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         <!-- Rendered by JS below -->
       </div>
@@ -364,6 +364,8 @@
   </footer>
 
   <script>
+    const fallbackSvg = "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' rx='30' fill='%23f5f5f7'/%3E%3Crect x='100' y='60' width='200' height='280' rx='24' fill='%231d1d1f'/%3E%3Crect x='110' y='70' width='180' height='260' rx='18' fill='%23ffffff'/%3E%3Ccircle cx='200' cy='200' r='35' fill='%230071e3'/%3E%3C/svg%3E";
+
     const productsData = [
       { id: '1', cat: 'iphone', badge: 'جديد متغلف بالكامل', title: 'آيفون 16 برو ماكس 256 جيجابايت - تيتانيوم صحراوي', categoryLabel: 'iPhone 16 Series', warranty: 'ضمان عامين من الوكيل', price: '68,900', oldPrice: '72,000', installment: '5,741', img: 'images/iphone_16_pro_max.jpg', msg: 'شراء آيفون 16 برو ماكس' },
       { id: '2', cat: 'iphone', badge: 'جديد بالكرتونة', title: 'آيفون 16 برو 128 جيجابايت - تيتانيوم طبيعي', categoryLabel: 'iPhone 16 Series', warranty: 'ضمان عامين من الوكيل', price: '58,500', oldPrice: '62,000', installment: '4,875', img: 'images/iphone_15_pro.jpg', msg: 'شراء آيفون 16 برو' },
@@ -382,7 +384,7 @@
         <div class="apple-card p-5 space-y-4 bg-white flex flex-col justify-between animate-fade-in">
           <div>
             <div class="aspect-square rounded-2xl bg-[#f5f5f7] border border-[#e5e5ea] overflow-hidden relative p-4 flex items-center justify-center">
-              <img src="${p.img}" class="w-full h-full object-contain rounded-xl" alt="${p.title}" />
+              <img src="${p.img}" onerror="this.onerror=null; this.src='${fallbackSvg}';" class="w-full h-full object-contain rounded-xl" alt="${p.title}" />
               <span class="absolute top-3 right-3 px-2.5 py-1 bg-[#1d1d1f] text-white text-[10px] font-bold rounded-md">${p.badge}</span>
             </div>
             <div class="mt-4">
@@ -426,7 +428,6 @@
       document.getElementById('mobileNav').classList.toggle('hidden');
     }
 
-    // Initial render all products
     renderProducts(productsData);
   </script>
 
