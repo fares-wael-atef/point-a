@@ -1,7 +1,18 @@
 {
   "version": 2,
-  "cleanUrls": true,
-  "trailingSlash": false,
+  "cleanUrls": false,
+  "rewrites": [
+    { "source": "/iphone", "destination": "/iphone.html" },
+    { "source": "/macbook", "destination": "/macbook.html" },
+    { "source": "/ipad", "destination": "/ipad.html" },
+    { "source": "/watch", "destination": "/watch.html" },
+    { "source": "/audio", "destination": "/audio.html" },
+    { "source": "/accessories", "destination": "/accessories.html" },
+    { "source": "/preowned", "destination": "/preowned.html" },
+    { "source": "/service", "destination": "/service.html" },
+    { "source": "/tradein", "destination": "/tradein.html" },
+    { "source": "/contact", "destination": "/contact.html" }
+  ],
   "headers": [
     {
       "source": "/images/(.*)",
