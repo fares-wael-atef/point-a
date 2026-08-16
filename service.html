@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POINT A | جدول أسعار صيانة الآيفون الرسمية (iPhone X - 17 Pro Max)</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@600;700;800;900&family=Tajawal:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { apple: { blue: '#0071e3', dark: '#1d1d1f' } } } } }</script>
+  <style>
+    body { background-color: #f5f5f7; color: #1d1d1f; font-family: 'Tajawal', sans-serif; }
+    .apple-card { background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 20px; transition: all 0.3s ease; }
+    .apple-card:hover { border-color: #0071e3; transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,113,227,0.1); }
+    .btn-apple-black { background: #1d1d1f; color: #fff; font-weight: 700; }
+    .btn-apple-black:hover { background: #000; }
+    .btn-apple-blue { background: #0071e3; color: #fff; font-weight: 700; }
+    .btn-apple-blue:hover { background: #0077ed; }
+  </style>
+</head>
+<body class="bg-[#f5f5f7]">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-[#e5e5ea]" dir="ltr">
+    <div class="max-w-7xl mx-auto flex items-center justify-between h-20 px-4 md:px-8">
+      <a href="index.html" class="flex items-center gap-3 group shrink-0">
+        <img src="images/logo.svg" alt="POINT A" class="w-10 h-10 rounded-xl" />
+        <div class="flex flex-col text-left">
+          <div class="flex items-center gap-1.5 font-['Outfit'] font-black text-2xl tracking-wider text-[#1d1d1f]">
+            <span>POINT</span><span>A</span>
+          </div>
+          <span class="text-[10px] text-gray-500 font-bold tracking-widest">Espana Plaza • Zayed</span>
+        </div>
+      </a>
+      <nav class="hidden xl:flex items-center gap-1 bg-[#f5f5f7] p-1.5 rounded-full border border-[#e5e5ea] text-xs font-bold" dir="rtl">
+        <a href="index.html" class="px-3.5 py-2 rounded-full hover:bg-white">الرئيسية</a>
+        <a href="iphone.html" class="px-3.5 py-2 rounded-full hover:bg-white">iPhone</a>
+        <a href="macbook.html" class="px-3.5 py-2 rounded-full hover:bg-white">MacBook</a>
+        <a href="ipad.html" class="px-3.5 py-2 rounded-full hover:bg-white">iPad</a>
+        <a href="watch.html" class="px-3.5 py-2 rounded-full hover:bg-white">Apple Watch</a>
+        <a href="accessories.html" class="px-3.5 py-2 rounded-full hover:bg-white">الإكسسوارات</a>
+        <a href="preowned.html" class="px-3.5 py-2 rounded-full hover:bg-white">كسر الزيرو</a>
+        <a href="service.html" class="px-3.5 py-2 rounded-full bg-white shadow-xs text-[#0071e3]">أسعار الصيانة</a>
+        <a href="tradein.html" class="px-3.5 py-2 rounded-full hover:bg-white">استبدل جهازك</a>
+        <a href="contact.html" class="px-3.5 py-2 rounded-full hover:bg-white">الفرع و GPS</a>
+      </nav>
+      <div class="flex items-center gap-3 shrink-0" dir="rtl">
+        <button onclick="openBookingModal()" class="hidden sm:flex bg-[#0071e3] text-white py-2.5 px-4 text-xs font-extrabold rounded-xl items-center gap-2">
+          <i class="fa-solid fa-wrench"></i><span>حجز صيانة</span>
+        </button>
+        <a href="https://wa.me/201070455777" target="_blank" class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-200 flex items-center justify-center">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <section class="py-12 bg-white border-b border-[#e5e5ea]">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 space-y-4 text-center">
+      <h1 class="text-4xl font-black font-['Outfit']">مركز صيانة الآيفون وحاسبة الأسعار</h1>
+      <p class="text-sm text-gray-600 max-w-xl mx-auto font-medium">أسعار قطع غيار آيفون الأصلية والضمان الرسمي من موديل iPhone X حتى iPhone 17 Pro Max.</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 space-y-8">
+      
+      <!-- MODEL SELECTOR -->
+      <div class="apple-card p-5 space-y-4 bg-white">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <label class="font-extrabold text-sm text-[#1d1d1f] flex items-center gap-2">
+            <span class="w-6 h-6 rounded-full bg-[#0071e3] text-white flex items-center justify-center text-xs">1</span>
+            <span>اختر موديل الآيفون المطلوب صيانته:</span>
+          </label>
+          <select id="modelSelect" onchange="renderRepairCards()" class="bg-[#f5f5f7] border border-[#e5e5ea] rounded-xl px-4 py-2.5 text-xs font-bold text-[#1d1d1f] focus:outline-none focus:border-[#0071e3]">
+            <option value="iphone-17-pro-max">iPhone 17 Pro Max</option>
+            <option value="iphone-17">iPhone 17</option>
+            <option value="iphone-16-pro-max">iPhone 16 Pro Max</option>
+            <option value="iphone-16-pro">iPhone 16 Pro</option>
+            <option value="iphone-16">iPhone 16</option>
+            <option value="iphone-15-pro-max" selected>iPhone 15 Pro Max</option>
+            <option value="iphone-15-pro">iPhone 15 Pro</option>
+            <option value="iphone-15">iPhone 15</option>
+            <option value="iphone-14-pro-max">iPhone 14 Pro Max</option>
+            <option value="iphone-14-pro">iPhone 14 Pro</option>
+            <option value="iphone-14">iPhone 14</option>
+            <option value="iphone-13-pro-max">iPhone 13 Pro Max</option>
+            <option value="iphone-13-pro">iPhone 13 Pro</option>
+            <option value="iphone-13">iPhone 13</option>
+            <option value="iphone-12-pro-max">iPhone 12 Pro Max</option>
+            <option value="iphone-12">iPhone 12</option>
+            <option value="iphone-11-pro-max">iPhone 11 Pro Max</option>
+            <option value="iphone-11">iPhone 11</option>
+            <option value="iphone-xs-max">iPhone XS Max</option>
+            <option value="iphone-x">iPhone X / XR</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- REPAIR CARDS GRID -->
+      <div id="repairCardsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+    </div>
+  </section>
+
+  <!-- BOOKING MODAL -->
+  <div id="bookingModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
+    <div class="apple-card p-6 max-w-lg w-full relative space-y-4 border-gray-300 bg-white">
+      <button onclick="closeBookingModal()" class="absolute top-4 left-4 p-2 text-gray-500 hover:text-black"><i class="fa-solid fa-xmark text-xl"></i></button>
+
+      <div class="space-y-1 text-right">
+        <span class="text-xs font-bold text-[#0071e3] uppercase">حجز موعد صيانة مؤكد</span>
+        <h3 class="text-xl font-bold text-[#1d1d1f]">استكمال بيانات حجز الصيانة</h3>
+      </div>
+
+      <form onsubmit="handleBookingSubmit(event)" class="space-y-3 text-right">
+        <div>
+          <label class="block text-xs font-bold text-gray-700 mb-1">الاسم بالكامل:</label>
+          <input type="text" id="custName" required placeholder="أدخل اسمك الكريم" class="w-full bg-[#f5f5f7] border border-[#e5e5ea] rounded-xl px-4 py-2.5 text-xs text-[#1d1d1f]" />
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-gray-700 mb-1">رقم الهاتف / الواتساب:</label>
+          <input type="tel" id="custPhone" required placeholder="01000000000" class="w-full bg-[#f5f5f7] border border-[#e5e5ea] rounded-xl px-4 py-2.5 text-xs text-[#1d1d1f]" />
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-1">تاريخ الحجز:</label>
+            <input type="date" id="custDate" required class="w-full bg-[#f5f5f7] border border-[#e5e5ea] rounded-xl px-3 py-2 text-xs text-[#1d1d1f]" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-1">الوقت المناسب:</label>
+            <select id="custTime" class="w-full bg-[#f5f5f7] border border-[#e5e5ea] rounded-xl px-3 py-2 text-xs font-bold text-[#1d1d1f]">
+              <option value="02:00 PM">02:00 PM</option>
+              <option value="04:00 PM">04:00 PM</option>
+              <option value="06:00 PM">06:00 PM</option>
+              <option value="08:00 PM">08:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="w-full btn-apple-black py-3 rounded-xl font-bold text-xs flex items-center justify-center gap-2 mt-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>تأكيد الحجز وتوجيهه للواتساب (01070455777)</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const sampleRepairs = [
+      { part: 'شاشة أصلية كاملا (OLED Apple Grade)', quality: 'أصلي 100%', price: '9,400', installment: '783', warranty: 'ضمان سنة كاملة', time: '45 دقيقة' },
+      { part: 'شاشة هاي كوبي فرز أول', quality: 'فرز أول', price: '6,300', installment: '525', warranty: 'ضمان 6 شهور', time: '30 دقيقة' },
+      { part: 'بطارية أصلية أبل سعة 100%', quality: 'أصلي 100%', price: '2,900', installment: '241', warranty: 'ضمان سنة كاملة', time: '30 دقيقة' },
+      { part: 'تغيير الظهر الزجاج بالليزر', quality: 'أصلية بالليزر', price: '1,400', installment: '116', warranty: 'ضمان 6 شهور', time: '90 دقيقة' },
+      { part: 'فلاتة مدخل الشحن الأصلي', quality: 'أصلي 100%', price: '2,500', installment: '208', warranty: 'ضمان سنة كاملة', time: '45 دقيقة' },
+      { part: 'صيانة البوردة والميكروسكوب والمياه', quality: 'صيانة بوردة', price: '3,800', installment: '316', warranty: 'ضمان سنة كاملة', time: '180 دقيقة' }
+    ];
+
+    function renderRepairCards() {
+      const container = document.getElementById('repairCardsContainer');
+      const modelName = document.getElementById('modelSelect').options[document.getElementById('modelSelect').selectedIndex].text;
+      
+      container.innerHTML = sampleRepairs.map((r) => `
+        <div class="apple-card p-6 flex flex-col justify-between space-y-6 bg-white">
+          <div class="flex items-center justify-between">
+            <span class="px-3 py-1 rounded-full text-[11px] font-black border border-emerald-200 text-emerald-800 bg-emerald-50">${r.quality}</span>
+            <span class="text-[11px] text-amber-600 font-bold"><i class="fa-regular fa-clock"></i> ${r.time}</span>
+          </div>
+          <div>
+            <div class="text-xs text-[#0071e3] font-bold">${modelName}</div>
+            <h4 class="text-lg font-bold text-[#1d1d1f] mt-1">${r.part}</h4>
+            <div class="text-xs text-emerald-700 font-bold mt-2"><i class="fa-solid fa-shield-halved"></i> ${r.warranty}</div>
+          </div>
+          <div class="p-4 rounded-xl bg-[#f5f5f7] border border-[#e5e5ea] space-y-2">
+            <div class="flex items-baseline justify-between">
+              <span class="text-2xl font-black text-[#1d1d1f] font-mono">${r.price} EGP</span>
+              <span class="text-[10px] font-bold text-emerald-700 px-2 py-0.5 rounded bg-emerald-100">خصم كاش</span>
+            </div>
+            <div class="text-xs text-gray-600 flex items-center justify-between border-t border-[#e5e5ea] pt-2">
+              <span>أو قسط (12 شهر):</span>
+              <span class="text-amber-600 font-mono font-bold">~${r.installment} EGP/شهرياً</span>
+            </div>
+          </div>
+          <button onclick="openBookingModal()" class="w-full btn-apple-blue py-3 rounded-xl text-xs font-bold flex items-center justify-center gap-2">
+            <i class="fa-regular fa-calendar-check"></i><span>احجز موعد الصيانة الآن</span>
+          </button>
+        </div>
+      `).join('');
+    }
+
+    function openBookingModal() { document.getElementById('bookingModal').classList.remove('hidden'); }
+    function closeBookingModal() { document.getElementById('bookingModal').classList.add('hidden'); }
+    function handleBookingSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('custName').value;
+      const phone = document.getElementById('custPhone').value;
+      const date = document.getElementById('custDate').value;
+      const time = document.getElementById('custTime').value;
+      const text = `🛠️ *حجز موعد صيانة جديد - POINT A*\n\n👤 *الاسم:* ${name}\n📞 *الهاتف:* ${phone}\n📅 *التاريخ:* ${date}\n⏰ *الوقت:* ${time}\n📍 *الفرع:* اسبانيا بلازا مول - الشيخ زايد\n\nرجاء تأكيد الحجز.`;
+      window.open(`https://wa.me/201070455777?text=${encodeURIComponent(text)}`, '_blank');
+      closeBookingModal();
+    }
+    renderRepairCards();
+    document.getElementById('custDate').value = new Date().toISOString().split('T')[0];
+  </script>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#1d1d1f] text-gray-400 py-8 text-xs text-center border-t border-gray-800">
+    © 2026 POINT A. جميع الحقوق محفوظة. الشيخ زايد - اسبانيا بلازا مول. واتساب: 01070455777
+  </footer>
+
+</body>
+</html>

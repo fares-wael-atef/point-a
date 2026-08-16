@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>POINT A | الرئيسية - جميع أجهزة أبل، صيانة وإكسسوارات - الشيخ زايد</title>
+  <meta name="description" content="متجر بوينت اي مول اسبانيا بلازا - الشيخ زايد. مبيعات جميع أجهزة أبل الأصلية والكسر زيرو وصيانة فورية من iPhone X حتى 17 Pro Max." />
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            apple: { canvas: '#f5f5f7', surface: '#ffffff', border: '#e5e5ea', text: '#1d1d1f', muted: '#86868b', blue: '#0071e3', dark: '#1d1d1f' }
+          },
+          fontFamily: { heading: ['Outfit', 'Tajawal', 'sans-serif'], body: ['Tajawal', 'Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #f5f5f7; color: #1d1d1f; font-family: 'Tajawal', 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+    .apple-card { background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+    .apple-card:hover { border-color: rgba(0,113,227,0.3); transform: translateY(-3px); box-shadow: 0 14px 32px rgba(0,113,227,0.08); }
+    .btn-apple-black { background: #1d1d1f; color: #ffffff; font-weight: 700; transition: all 0.2s ease; }
+    .btn-apple-black:hover { background: #000000; transform: translateY(-1px); }
+    .btn-apple-blue { background: #0071e3; color: #ffffff; font-weight: 700; transition: all 0.2s ease; }
+    .btn-apple-blue:hover { background: #0077ed; transform: translateY(-1px); }
+    .btn-apple-secondary { background: #e8e8ed; color: #1d1d1f; font-weight: 700; transition: all 0.2s ease; }
+    .btn-apple-secondary:hover { background: #e0e0e5; transform: translateY(-1px); }
+
+    .nav-pill {
+      padding: 6px 13px;
+      border-radius: 9999px;
+      color: #1d1d1f;
+      white-space: nowrap;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .nav-pill:hover {
+      background-color: rgba(0, 113, 227, 0.08);
+      color: #0071e3;
+      transform: translateY(-1px) scale(1.04);
+    }
+    .nav-pill.active {
+      background-color: #ffffff;
+      color: #0071e3;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .filter-btn {
+      padding: 8px 18px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 700;
+      border: 1px solid #e5e5ea;
+      background-color: #ffffff;
+      color: #1d1d1f;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background-color: #0071e3;
+      border-color: #0071e3;
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0,113,227,0.25);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in { animation: fadeIn 0.3s ease-out forwards; }
+  </style>
+</head>
+<body class="bg-[#f5f5f7] text-[#1d1d1f] antialiased">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-[#e5e5ea] shadow-xs">
+    <div class="max-w-7xl mx-auto flex items-center justify-between h-20 px-4 md:px-8">
+      
+      <!-- LOGO BRANDING ANCHORED TO FAR LEFT -->
+      <a href="index.html" class="flex items-center gap-3 group shrink-0" dir="ltr">
+        <img src="images/logo.jpg" alt="POINT A" class="w-10 h-10 rounded-xl shadow-xs border border-black/10 object-cover group-hover:scale-105 transition-transform" />
+        <div class="flex flex-col text-left">
+          <div class="flex items-center gap-1.5 font-['Outfit'] font-black text-2xl tracking-wider text-[#1d1d1f]">
+            <span>POINT</span><span>A</span>
+          </div>
+          <span class="text-[10px] text-gray-500 font-bold tracking-widest leading-none">Espana Plaza • Zayed</span>
+        </div>
+      </a>
+
+      <!-- CENTER: NAVIGATION LINKS WITH ANIMATED PILLS -->
+      <nav class="hidden lg:flex items-center gap-1 bg-[#f5f5f7] p-1.5 rounded-full border border-[#e5e5ea] text-xs font-bold" dir="rtl">
+        <a href="index.html" class="nav-pill active">الرئيسية</a>
+        <a href="iphone.html" class="nav-pill">iPhone</a>
+        <a href="macbook.html" class="nav-pill">MacBook</a>
+        <a href="ipad.html" class="nav-pill">iPad</a>
+        <a href="watch.html" class="nav-pill">Watch</a>
+        <a href="audio.html" class="nav-pill">AirPods</a>
+        <a href="accessories.html" class="nav-pill">إكسسوارات</a>
+        <a href="preowned.html" class="nav-pill">كسر زيرو</a>
+        <a href="service.html" class="nav-pill">الصيانة</a>
+        <a href="tradein.html" class="nav-pill">الاستبدال</a>
+        <a href="contact.html" class="nav-pill">الفرع و GPS</a>
+      </nav>
+
+      <!-- FAR RIGHT: WHATSAPP + BOOKING ACTION BUTTON -->
+      <div class="flex items-center gap-2.5 shrink-0" dir="rtl">
+        <a href="https://wa.me/201070455777?text=مرحباً%20بوينت%20اي" target="_blank" class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-200 flex items-center justify-center hover:bg-emerald-100 hover:scale-105 transition-all" title="واتساب 01070455777">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+        </a>
+
+        <a href="service.html" class="hidden sm:flex bg-[#0071e3] hover:bg-[#0077ed] text-white py-2.5 px-5 text-xs font-extrabold rounded-xl items-center gap-2 shadow-xs transition-all hover:scale-105">
+          <i class="fa-solid fa-wrench text-xs"></i>
+          <span>حجز صيانة فورية</span>
+        </a>
+
+        <button onclick="toggleMobileNav()" class="lg:hidden p-2 text-gray-700 hover:text-black">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- MOBILE MENU DROPDOWN -->
+    <div id="mobileNav" class="hidden lg:hidden border-t border-[#e5e5ea] bg-white p-4 space-y-2 text-sm font-bold shadow-xl" dir="rtl">
+      <a href="index.html" class="block p-2.5 rounded-xl bg-blue-50 text-[#0071e3]"><i class="fa-solid fa-house ml-2"></i> الرئيسية</a>
+      <a href="iphone.html" class="block p-2.5 rounded-xl hover:bg-gray-100"><i class="fa-solid fa-mobile-screen text-[#0071e3] ml-2"></i> iPhone - آيفون</a>
+      <a href="macbook.html" class="block p-2.5 rounded-xl hover:bg-gray-100"><i class="fa-solid fa-laptop text-[#0071e3] ml-2"></i> MacBook - ماك بوك</a>
+      <a href="ipad.html" class="block p-2.5 rounded-xl hover:bg-gray-100"><i class="fa-solid fa-tablet-screen-button text-[#0071e3] ml-2"></i> iPad - آيباد</a>
+      <a href="watch.html" class="block p-2.5 rounded-xl hover:bg-gray-100"><i class="fa-solid fa-stopwatch text-[#0071e3] ml-2"></i> Apple Watch - ساعات أبل</a>
+      <a href="audio.html" class="block p-2.5 rounded-xl hover:bg-gray-100"><i class="fa-solid fa-headphones text-[#0071e3] ml-2"></i> AirPods وصوتيات أبل</a>
+      <a href="accessories.html" class="block p-2.5 rounded-xl hover:bg-gray-100"><i class="fa-solid fa-shield-cat text-[#0071e3] ml-2"></i> الإكسسوارات والجرابات</a>
+      <a href="preowned.html" class="block p-2.5 rounded-xl hover:bg-gray-100"><i class="fa-solid fa-box-open text-[#0071e3] ml-2"></i> كسر الزيرو المضمون</a>
+      <a href="service.html" class="block p-2.5 rounded-xl hover:bg-gray-100"><i class="fa-solid fa-wrench text-[#0071e3] ml-2"></i> جدول أسعار الصيانة</a>
+      <a href="tradein.html" class="block p-2.5 rounded-xl hover:bg-gray-100"><i class="fa-solid fa-rotate text-[#0071e3] ml-2"></i> تقييم استبدال الجهاز</a>
+      <a href="contact.html" class="block p-2.5 rounded-xl hover:bg-gray-100"><i class="fa-solid fa-location-dot text-[#0071e3] ml-2"></i> موقع الفرع وخريطة GPS</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="relative overflow-hidden pt-10 pb-16 md:pt-14 md:pb-20 border-b border-[#e5e5ea] bg-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-right">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-[#0071e3] text-xs md:text-sm font-bold">
+            <i class="fa-solid fa-location-dot animate-bounce"></i>
+            <span>مول اسبانيا بلازا - مدينة الشيخ زايد - مصر</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl md:text-6xl font-black font-['Outfit'] text-[#1d1d1f] leading-[1.15]">
+            مركز صيانة ومبيعات <br />
+            <span class="text-[#0071e3]">أجهزة Apple الرسمية</span> <br />
+            في الشيخ زايد
+          </h1>
+
+          <p class="text-gray-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
+            بوينت اي هو متجرك المعتمد لشراء أحدث هواتف الآيفون الجديدة بالكرتونة، أجهزة الماك بوك والآيباد وساعات أبل، والأجهزة المستعملة كسر الزيرو، وصيانة متخصصة فورية من <strong class="text-[#1d1d1f]">iPhone X إلى iPhone 17 Pro Max</strong> بقطع غيار أصلية وضمان عام كامل.
+          </p>
+
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
+            <a href="#all-products" class="btn-apple-blue py-3.5 px-7 text-xs md:text-sm font-bold rounded-2xl flex items-center gap-2 shadow-md">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span>تصفح وشراء أجهزة أبل الآن</span>
+            </a>
+            <a href="service.html" class="btn-apple-secondary py-3.5 px-6 text-xs md:text-sm font-bold rounded-2xl flex items-center gap-2">
+              <i class="fa-solid fa-screwdriver-wrench text-[#0071e3]"></i>
+              <span>جدول الصيانة والأسعار</span>
+            </a>
+            <a href="tradein.html" class="py-3.5 px-5 text-xs font-bold text-emerald-800 bg-emerald-50 border border-emerald-200 rounded-2xl hover:bg-emerald-100">
+              <i class="fa-solid fa-rotate ml-1"></i>
+              <span>استبدل جهازك القديم</span>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-[#e5e5ea] text-xs font-bold text-gray-700">
+            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600"></i><span>قطع غيار أصلية 100%</span></div>
+            <div class="flex items-center gap-2"><i class="fa-solid fa-shield-halved text-[#0071e3]"></i><span>ضمان سنة كاملة</span></div>
+            <div class="flex items-center gap-2"><i class="fa-solid fa-bolt text-amber-500"></i><span>تسليم في 30 دقيقة</span></div>
+            <div class="flex items-center gap-2"><i class="fa-solid fa-truck-fast text-purple-600"></i><span>استلام وتوصيل بالزايد</span></div>
+          </div>
+        </div>
+
+        <!-- RIGHT HERO SHOWCASE CARD -->
+        <div class="lg:col-span-5">
+          <div class="apple-card p-6 border-[#e5e5ea] space-y-5 bg-white">
+            <div class="rounded-2xl bg-[#f5f5f7] p-6 text-[#1d1d1f] space-y-4 border border-[#e5e5ea]">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <img src="images/logo.jpg" alt="POINT A" class="w-12 h-12 rounded-2xl shadow-md border border-black/10 object-cover" />
+                  <div>
+                    <div class="font-extrabold text-2xl font-['Outfit'] text-[#1d1d1f]">POINT A</div>
+                    <div class="text-xs text-[#0071e3] font-bold">مول اسبانيا بلازا • الشيخ زايد</div>
+                  </div>
+                </div>
+                <span class="px-3 py-1 bg-emerald-100 text-emerald-800 border border-emerald-300 rounded-full text-xs font-bold animate-pulse"><i class="fa-solid fa-circle text-[8px] text-emerald-600 ml-1"></i> مفتوح الآن</span>
+              </div>
+
+              <p class="text-xs text-gray-600 leading-relaxed font-medium">
+                مول اسبانيا بلازا - مدينة الشيخ زايد - محافظة الجيزة. مواعيد العمل يومياً من 11 صباحاً حتى 11 مساءً.
+              </p>
+
+              <a href="https://wa.me/201070455777?text=مرحباً%20بوينت%20اي%20عايز%20استفسر%20عن%20صيانة%20او%20شراء%20جهاز" target="_blank" class="w-full btn-apple-black py-3.5 px-4 rounded-xl text-xs font-bold flex items-center justify-between shadow-sm">
+                <span><i class="fa-brands fa-whatsapp text-emerald-400 ml-1"></i> للتواصل المباشر عبر الواتساب: 01070455777</span>
+                <i class="fa-solid fa-chevron-left"></i>
+              </a>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white border border-[#e5e5ea] space-y-2 text-xs">
+              <div class="flex items-center justify-between font-bold text-gray-500">
+                <span>حاسبة صيانة الآيفون</span>
+                <span class="text-[#0071e3]">تحديث لحظي</span>
+              </div>
+              <div class="text-sm font-bold text-[#1d1d1f] flex items-center justify-between">
+                <span>iPhone 15 Pro / 16 Pro Max / 17</span>
+                <span class="text-emerald-700 font-mono font-extrabold">من 1,400 EGP</span>
+              </div>
+              <div class="text-gray-500 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock text-amber-500"></i>
+                <span>تغيير الشاشة والبطارية والظهر بالليزر في 30 دقيقة</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL STORE PRODUCTS CATALOG (INTERACTIVE FILTER TABS) -->
+  <section id="all-products" class="py-16 md:py-24 border-b border-[#e5e5ea] bg-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 space-y-10">
+      
+      <div class="text-center space-y-3 max-w-3xl mx-auto">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-[#0071e3] border border-blue-200 text-xs font-bold uppercase">
+          <i class="fa-solid fa-store"></i>
+          <span>المعرض المباشر لجميع الأجهزة والمنتجات</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black font-['Outfit'] text-[#1d1d1f]">
+          اختر واشترِ جميع أجهزة أبل <span class="text-[#0071e3]">بأفضل سعر في مصر</span>
+        </h2>
+        <p class="text-xs md:text-sm text-gray-600 font-medium">
+          هواتف آيفون جديدة بالكرتونة، أجهزة كسر زيرو مضمونة، ماك بوك، آيباد، ساعات أبل وسماعات ايربودز مع توصيل مجاني بالشيخ زايد وتقسيط حتى 12 شهر.
+        </p>
+      </div>
+
+      <!-- FILTER TABS -->
+      <div class="flex items-center justify-center gap-2 overflow-x-auto pb-2" dir="rtl">
+        <button onclick="filterProducts('all')" class="filter-btn active" id="btn-all">جميع الأجهزة (All)</button>
+        <button onclick="filterProducts('iphone')" class="filter-btn" id="btn-iphone">iPhone - آيفون</button>
+        <button onclick="filterProducts('macbook')" class="filter-btn" id="btn-macbook">MacBook - ماك بوك</button>
+        <button onclick="filterProducts('ipad')" class="filter-btn" id="btn-ipad">iPad - آيباد</button>
+        <button onclick="filterProducts('watch')" class="filter-btn" id="btn-watch">Apple Watch</button>
+        <button onclick="filterProducts('audio')" class="filter-btn" id="btn-audio">AirPods - ايربودز</button>
+        <button onclick="filterProducts('preowned')" class="filter-btn" id="btn-preowned">كسر الزيرو</button>
+        <button onclick="filterProducts('accessories')" class="filter-btn" id="btn-accessories">إكسسوارات وجرابات</button>
+      </div>
+
+      <!-- PRODUCTS GRID (DYNAMICALLY FILTERABLE) -->
+      <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Rendered by JS below -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RICH APPLE STORE FOOTER -->
+  <footer class="bg-white border-t border-[#e5e5ea] text-gray-600 pt-16 pb-12 text-xs">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 space-y-12">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="images/logo.jpg" alt="POINT A" class="w-10 h-10 rounded-xl shadow-xs border border-black/10 object-cover" />
+            <div>
+              <div class="font-black text-xl font-['Outfit'] text-[#1d1d1f]">POINT A</div>
+              <div class="text-[10px] text-[#0071e3] font-bold">اسبانيا بلازا مول • الشيخ زايد</div>
+            </div>
+          </div>
+          <p class="text-xs text-gray-500 leading-relaxed font-medium">
+            بوينت اي هو المركز المتخصص في مبيعات أجهزة أبل الرسمية بالكرتونة والكسر زيرو، وصيانة هواتف الآيفون المعتمدة بقطع غيار أصلية وضمان عام كامل.
+          </p>
+          <div class="flex items-center gap-2 pt-1">
+            <a href="https://www.instagram.com/pointastores" target="_blank" class="w-9 h-9 rounded-xl bg-[#f5f5f7] border border-[#e5e5ea] text-pink-600 flex items-center justify-center hover:bg-pink-50 transition-colors">
+              <i class="fa-brands fa-instagram text-lg"></i>
+            </a>
+            <a href="https://www.tiktok.com/@pointastore" target="_blank" class="w-9 h-9 rounded-xl bg-[#f5f5f7] border border-[#e5e5ea] text-gray-900 flex items-center justify-center hover:bg-gray-100 transition-colors">
+              <i class="fa-brands fa-tiktok text-lg"></i>
+            </a>
+            <a href="https://wa.me/201070455777" target="_blank" class="w-9 h-9 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-600 flex items-center justify-center hover:bg-emerald-100 transition-colors">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-extrabold text-sm text-[#1d1d1f] border-b border-[#e5e5ea] pb-2">الأجهزة والمنتجات</h4>
+          <ul class="space-y-2 font-medium">
+            <li><a href="iphone.html" class="hover:text-[#0071e3] transition-colors">هواتف iPhone (جديد بالكرتونة)</a></li>
+            <li><a href="macbook.html" class="hover:text-[#0071e3] transition-colors">أجهزة MacBook Pro & Air</a></li>
+            <li><a href="ipad.html" class="hover:text-[#0071e3] transition-colors">أجهزة iPad Pro M4 & Air</a></li>
+            <li><a href="watch.html" class="hover:text-[#0071e3] transition-colors">ساعات Apple Watch Ultra 2</a></li>
+            <li><a href="audio.html" class="hover:text-[#0071e3] transition-colors">سماعات AirPods Pro & Max</a></li>
+            <li><a href="preowned.html" class="hover:text-[#0071e3] transition-colors">أجهزة كسر الزيرو المضمونة</a></li>
+            <li><a href="accessories.html" class="hover:text-[#0071e3] transition-colors">الجرابات الشفافة MagSafe</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-extrabold text-sm text-[#1d1d1f] border-b border-[#e5e5ea] pb-2">خدمات الصيانة والضمان</h4>
+          <ul class="space-y-2 font-medium">
+            <li><a href="service.html" class="hover:text-[#0071e3] transition-colors">تغيير شاشة آيفون أصلية (OLED)</a></li>
+            <li><a href="service.html" class="hover:text-[#0071e3] transition-colors">تغيير بطارية آيفون 100%</a></li>
+            <li><a href="service.html" class="hover:text-[#0071e3] transition-colors">تغيير الظهر الزجاجي بالليزر</a></li>
+            <li><a href="service.html" class="hover:text-[#0071e3] transition-colors">صيانة البوردة وأعطال المياه</a></li>
+            <li><a href="service.html" class="hover:text-[#0071e3] transition-colors">جدول أسعار صيانة iPhone X إلى 17 Pro Max</a></li>
+            <li><a href="tradein.html" class="hover:text-[#0071e3] transition-colors">تقييم واستبدال الجهاز القديم</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-extrabold text-sm text-[#1d1d1f] border-b border-[#e5e5ea] pb-2">معلومات الفرع والتواصل</h4>
+          <div class="space-y-2.5 font-medium text-gray-600">
+            <div class="flex items-start gap-2">
+              <i class="fa-solid fa-location-dot text-[#0071e3] mt-1"></i>
+              <span>مول اسبانيا بلازا - الشيخ زايد - الجيزة</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-emerald-600"></i>
+              <span class="font-mono font-bold text-[#1d1d1f]">01070455777</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-regular fa-clock text-amber-500"></i>
+              <span>يومياً من 11:00 صباحاً حتى 11:00 مساءً</span>
+            </div>
+            <a href="contact.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#f5f5f7] border border-[#e5e5ea] text-[#0071e3] font-bold hover:bg-blue-50 transition-colors mt-2">
+              <i class="fa-solid fa-route"></i>
+              <span>التوجه للفرع عبر GPS</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-[#e5e5ea] flex flex-col md:flex-row items-center justify-between gap-4 text-gray-500">
+        <div class="flex items-center gap-2 font-medium">
+          <span>© 2026 POINT A. جميع الحقوق محفوظة.</span>
+          <span>•</span>
+          <span>مول اسبانيا بلازا - مدينة الشيخ زايد</span>
+        </div>
+        <div class="flex items-center gap-4 text-gray-400 font-mono text-[11px]">
+          <span>الواتساب المباشر: <strong class="text-emerald-700 font-bold">01070455777</strong></span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    const productsData = [
+      { id: '1', cat: 'iphone', badge: 'جديد متغلف بالكامل', title: 'آيفون 16 برو ماكس 256 جيجابايت - تيتانيوم صحراوي', categoryLabel: 'iPhone 16 Series', warranty: 'ضمان عامين من الوكيل', price: '68,900', oldPrice: '72,000', installment: '5,741', img: 'images/iphone_16_pro_max.jpg', msg: 'شراء آيفون 16 برو ماكس' },
+      { id: '2', cat: 'iphone', badge: 'جديد بالكرتونة', title: 'آيفون 16 برو 128 جيجابايت - تيتانيوم طبيعي', categoryLabel: 'iPhone 16 Series', warranty: 'ضمان عامين من الوكيل', price: '58,500', oldPrice: '62,000', installment: '4,875', img: 'images/iphone_15_pro.jpg', msg: 'شراء آيفون 16 برو' },
+      { id: '3', cat: 'macbook', badge: 'M3 Pro Chip', title: 'ماك بوك برو 16 بوصة M3 برو 512 جيجابايت - أسود فلكي', categoryLabel: 'MacBook Pro', warranty: 'ضمان عامين الوكيل الرسمي', price: '118,000', oldPrice: '124,000', installment: '9,833', img: 'images/macbook_pro_m3.jpg', msg: 'شراء ماك بوك برو M3' },
+      { id: '4', cat: 'ipad', badge: 'M4 OLED Display', title: 'آيباد برو 11 بوصة M4 OLED سعة 256 جيجابايت', categoryLabel: 'iPad Pro M4', warranty: 'ضمان عامين من الوكيل', price: '49,500', oldPrice: '53,000', installment: '4,125', img: 'images/ipad_pro_m4.jpg', msg: 'شراء آيباد برو M4' },
+      { id: '5', cat: 'watch', badge: 'Titanium Case', title: 'ساعة أبل واش الترا 2 تيتانيوم - حزام أوشن أورانج', categoryLabel: 'Apple Watch Ultra 2', warranty: 'ضمان سنة رسمية الوكيل', price: '38,900', oldPrice: '42,000', installment: '3,241', img: 'images/apple_watch_ultra.jpg', msg: 'شراء ساعة أبل الترا 2' },
+      { id: '6', cat: 'audio', badge: 'Type-C USB-C', title: 'سماعة أبل ايربودز برو الجيل الثاني منفذ Type-C مع عزل الضوضاء', categoryLabel: 'AirPods Pro 2', warranty: 'ضمان سنة رسمية الوكيل', price: '11,900', oldPrice: '13,500', installment: '991', img: 'images/airpods_pro_2.jpg', msg: 'شراء ايربودز برو 2' },
+      { id: '7', cat: 'audio', badge: 'Space Gray', title: 'سماعة أبل ايربودز ماكس اللاسلكية فوق الأذن - رمادي فلكي', categoryLabel: 'AirPods Max', warranty: 'ضمان سنة رسمية الوكيل', price: '29,500', oldPrice: '33,000', installment: '2,458', img: 'images/airpods_max.jpg', msg: 'شراء ايربودز ماكس' },
+      { id: '8', cat: 'preowned', badge: 'بطارية 96% أصلية', title: 'آيفون 15 برو 256 جيجابايت - تيتانيوم طبيعي (كسر زيرو)', categoryLabel: 'Pre-Owned A+', warranty: 'ضمان 6 شهور بوينت اي', price: '43,500', oldPrice: '47,000', installment: '3,625', img: 'images/iphone_15_pro.jpg', msg: 'شراء آيفون 15 برو كسر زيرو' },
+      { id: '9', cat: 'accessories', badge: 'MagSafe N52', title: 'جراب بوينت اي شفاف ماج سيف N52 مضاد للإصفرار', categoryLabel: 'Accessories', warranty: 'ضمان عدم الإصفرار لعام', price: '650', oldPrice: '850', installment: '54', img: 'images/magsafe_case.jpg', msg: 'شراء جراب ماج سيف' }
+    ];
+
+    function renderProducts(items) {
+      const grid = document.getElementById('productsGrid');
+      grid.innerHTML = items.map(p => `
+        <div class="apple-card p-5 space-y-4 bg-white flex flex-col justify-between animate-fade-in">
+          <div>
+            <div class="aspect-square rounded-2xl bg-[#f5f5f7] border border-[#e5e5ea] overflow-hidden relative p-4 flex items-center justify-center">
+              <img src="${p.img}" class="w-full h-full object-contain rounded-xl" alt="${p.title}" />
+              <span class="absolute top-3 right-3 px-2.5 py-1 bg-[#1d1d1f] text-white text-[10px] font-bold rounded-md">${p.badge}</span>
+            </div>
+            <div class="mt-4">
+              <div class="text-[11px] text-[#0071e3] font-bold">${p.categoryLabel}</div>
+              <h3 class="text-base font-bold text-[#1d1d1f] mt-1">${p.title}</h3>
+              <div class="text-xs text-gray-600 mt-1 flex items-center gap-1"><i class="fa-solid fa-shield-halved text-emerald-600"></i> ${p.warranty}</div>
+            </div>
+          </div>
+
+          <div class="space-y-3 border-t border-[#e5e5ea] pt-3">
+            <div class="flex items-baseline justify-between">
+              <div class="flex items-baseline gap-2">
+                <span class="text-xl font-black text-[#1d1d1f] font-mono">${p.price} EGP</span>
+                <span class="text-xs text-gray-400 line-through font-mono">${p.oldPrice} EGP</span>
+              </div>
+              <span class="text-[10px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded">خصم كاش</span>
+            </div>
+            <div class="text-xs text-gray-500 font-bold flex items-center justify-between">
+              <span>أو قسط 12 شهر:</span>
+              <span class="text-[#0071e3] font-mono font-bold">~${p.installment} EGP/شهرياً</span>
+            </div>
+            <a href="https://wa.me/201070455777?text=${encodeURIComponent(p.msg)}" target="_blank" class="w-full btn-apple-black py-3 rounded-xl text-xs font-bold text-center block">طلب واستفسار عبر الواتساب</a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function filterProducts(category) {
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      document.getElementById(`btn-${category}`).classList.add('active');
+
+      if (category === 'all') {
+        renderProducts(productsData);
+      } else {
+        const filtered = productsData.filter(p => p.cat === category);
+        renderProducts(filtered);
+      }
+    }
+
+    function toggleMobileNav() {
+      document.getElementById('mobileNav').classList.toggle('hidden');
+    }
+
+    // Initial render all products
+    renderProducts(productsData);
+  </script>
+
+</body>
+</html>
