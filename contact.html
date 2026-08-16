@@ -2,64 +2,78 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>POINT A | اتصل بنا وموقع فرع اسبانيا بلازا مول GPS</title>
-  <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@600;700;800;900&family=Tajawal:wght@500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config = { theme: { extend: { colors: { apple: { blue: '#0071e3', dark: '#1d1d1f' } } } } }</script>
   <style>
-    body { background-color: #f5f5f7; color: #1d1d1f; font-family: 'Tajawal', sans-serif; }
+    body { background-color: #f5f5f7; color: #1d1d1f; font-family: 'Tajawal', sans-serif; -webkit-font-smoothing: antialiased; }
     .apple-card { background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 20px; transition: all 0.3s ease; }
     .apple-card:hover { border-color: #0071e3; transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,113,227,0.1); }
     .btn-apple-black { background: #1d1d1f; color: #fff; font-weight: 700; }
     .btn-apple-black:hover { background: #000; }
     .btn-apple-blue { background: #0071e3; color: #fff; font-weight: 700; }
     .btn-apple-blue:hover { background: #0077ed; }
+    .nav-pill { padding: 6px 13px; border-radius: 9999px; color: #1d1d1f; white-space: nowrap; transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); }
+    .nav-pill:hover { background-color: rgba(0, 113, 227, 0.08); color: #0071e3; transform: translateY(-1px) scale(1.04); }
+    .nav-pill.active { background-color: #ffffff; color: #0071e3; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
   </style>
 </head>
-<body class="bg-[#f5f5f7]">
+<body class="bg-[#f5f5f7] antialiased">
 
   <!-- HEADER -->
-  <header class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-[#e5e5ea]" dir="ltr">
+  <header class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-[#e5e5ea] shadow-xs">
     <div class="max-w-7xl mx-auto flex items-center justify-between h-20 px-4 md:px-8">
-      <a href="index.html" class="flex items-center gap-3 group shrink-0">
-        <img src="images/logo.svg" alt="POINT A" class="w-10 h-10 rounded-xl" />
+      
+      <a href="index.html" class="flex items-center gap-3 group shrink-0" dir="ltr">
+        <img src="images/logo.jpg" alt="POINT A" class="w-10 h-10 rounded-xl shadow-xs border border-black/10 object-cover group-hover:scale-105 transition-transform" />
         <div class="flex flex-col text-left">
           <div class="flex items-center gap-1.5 font-['Outfit'] font-black text-2xl tracking-wider text-[#1d1d1f]">
             <span>POINT</span><span>A</span>
           </div>
-          <span class="text-[10px] text-gray-500 font-bold tracking-widest">Espana Plaza • Zayed</span>
+          <span class="text-[10px] text-gray-500 font-bold tracking-widest leading-none">Espana Plaza • Zayed</span>
         </div>
       </a>
-      <nav class="hidden xl:flex items-center gap-1 bg-[#f5f5f7] p-1.5 rounded-full border border-[#e5e5ea] text-xs font-bold" dir="rtl">
-        <a href="index.html" class="px-3.5 py-2 rounded-full hover:bg-white">الرئيسية</a>
-        <a href="iphone.html" class="px-3.5 py-2 rounded-full hover:bg-white">iPhone</a>
-        <a href="macbook.html" class="px-3.5 py-2 rounded-full hover:bg-white">MacBook</a>
-        <a href="ipad.html" class="px-3.5 py-2 rounded-full hover:bg-white">iPad</a>
-        <a href="watch.html" class="px-3.5 py-2 rounded-full hover:bg-white">Apple Watch</a>
-        <a href="accessories.html" class="px-3.5 py-2 rounded-full hover:bg-white">الإكسسوارات</a>
-        <a href="preowned.html" class="px-3.5 py-2 rounded-full hover:bg-white">كسر الزيرو</a>
-        <a href="service.html" class="px-3.5 py-2 rounded-full hover:bg-white">أسعار الصيانة</a>
-        <a href="tradein.html" class="px-3.5 py-2 rounded-full hover:bg-white">استبدل جهازك</a>
-        <a href="contact.html" class="px-3.5 py-2 rounded-full bg-white shadow-xs text-[#0071e3]">الفرع و GPS</a>
+
+      <nav class="hidden lg:flex items-center gap-1 bg-[#f5f5f7] p-1.5 rounded-full border border-[#e5e5ea] text-xs font-bold" dir="rtl">
+        <a href="index.html" class="nav-pill">الرئيسية</a>
+        <a href="iphone.html" class="nav-pill">iPhone</a>
+        <a href="macbook.html" class="nav-pill">MacBook</a>
+        <a href="ipad.html" class="nav-pill">iPad</a>
+        <a href="watch.html" class="nav-pill">Watch</a>
+        <a href="audio.html" class="nav-pill">AirPods</a>
+        <a href="accessories.html" class="nav-pill">إكسسوارات</a>
+        <a href="preowned.html" class="nav-pill">كسر زيرو</a>
+        <a href="service.html" class="nav-pill">الصيانة</a>
+        <a href="tradein.html" class="nav-pill">الاستبدال</a>
+        <a href="contact.html" class="nav-pill active">الفرع و GPS</a>
       </nav>
-      <div class="flex items-center gap-3 shrink-0" dir="rtl">
-        <a href="service.html" class="hidden sm:flex bg-[#0071e3] text-white py-2.5 px-4 text-xs font-extrabold rounded-xl items-center gap-2">
-          <i class="fa-solid fa-wrench"></i><span>حجز صيانة</span>
+
+      <div class="flex items-center gap-2.5 shrink-0" dir="rtl">
+        <a href="https://wa.me/201070455777?text=مرحباً%20بوينت%20اي" target="_blank" class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-200 flex items-center justify-center hover:bg-emerald-100 hover:scale-105 transition-all" title="واتساب 01070455777">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
         </a>
-        <a href="https://wa.me/201070455777" target="_blank" class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-200 flex items-center justify-center">
-          <i class="fa-brands fa-whatsapp text-lg"></i>
+
+        <a href="service.html" class="hidden sm:flex bg-[#0071e3] hover:bg-[#0077ed] text-white py-2.5 px-5 text-xs font-extrabold rounded-xl items-center gap-2 shadow-xs transition-all hover:scale-105">
+          <i class="fa-solid fa-wrench text-xs"></i>
+          <span>حجز صيانة فورية</span>
         </a>
+
+        <button onclick="toggleMobileNav()" class="lg:hidden p-2 text-gray-700 hover:text-black">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
       </div>
+
     </div>
   </header>
 
   <!-- CONTENT -->
   <section class="py-12 bg-white border-b border-[#e5e5ea]">
     <div class="max-w-7xl mx-auto px-4 md:px-8 space-y-4 text-center">
-      <h1 class="text-4xl font-black font-['Outfit']">موقع الفرع وخريطة GPS المباشرة</h1>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-black font-['Outfit']">موقع الفرع وخريطة GPS المباشرة</h1>
       <p class="text-sm text-gray-600 max-w-xl mx-auto font-medium">يشرفنا حضوركم في فرع بوينت اي بمول اسبانيا بلازا - مدينة الشيخ زايد.</p>
     </div>
   </section>
@@ -83,7 +97,7 @@
         <div class="lg:col-span-5 space-y-4">
           <div class="apple-card p-6 space-y-4 bg-white">
             <div class="flex items-center gap-3 border-b border-[#e5e5ea] pb-3">
-              <img src="images/logo.svg" alt="POINT A" class="w-10 h-10 rounded-xl" />
+              <img src="images/logo.jpg" alt="POINT A" class="w-10 h-10 rounded-xl shadow-xs border border-black/10 object-cover" />
               <div>
                 <div class="font-black text-xl font-['Outfit'] text-[#1d1d1f]">POINT A</div>
                 <div class="text-xs text-[#0071e3] font-bold">اسبانيا بلازا مول • الشيخ زايد</div>
@@ -139,9 +153,45 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-[#1d1d1f] text-gray-400 py-8 text-xs text-center border-t border-gray-800">
-    © 2026 POINT A. جميع الحقوق محفوظة. الشيخ زايد - اسبانيا بلازا مول. واتساب: 01070455777
+  <!-- RICH FOOTER -->
+  <footer class="bg-white border-t border-[#e5e5ea] text-gray-600 pt-16 pb-12 text-xs">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 space-y-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="images/logo.jpg" alt="POINT A" class="w-10 h-10 rounded-xl shadow-xs border border-black/10 object-cover" />
+            <div>
+              <div class="font-black text-xl font-['Outfit'] text-[#1d1d1f]">POINT A</div>
+              <div class="text-[10px] text-[#0071e3] font-bold">اسبانيا بلازا مول • الشيخ زايد</div>
+            </div>
+          </div>
+          <p class="text-xs text-gray-500 leading-relaxed font-medium">بوينت اي هو المركز المتخصص في مبيعات أجهزة أبل الرسمية بالكرتونة والكسر زيرو، وصيانة هواتف الآيفون المعتمدة بقطع غيار أصلية وضمان عام كامل.</p>
+        </div>
+        <div class="space-y-3">
+          <h4 class="font-extrabold text-sm text-[#1d1d1f] border-b border-[#e5e5ea] pb-2">الأجهزة والمنتجات</h4>
+          <ul class="space-y-2 font-medium">
+            <li><a href="iphone.html" class="hover:text-[#0071e3]">هواتف iPhone</a></li>
+            <li><a href="macbook.html" class="hover:text-[#0071e3]">أجهزة MacBook Pro</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="font-extrabold text-sm text-[#1d1d1f] border-b border-[#e5e5ea] pb-2">خدمات الصيانة</h4>
+          <ul class="space-y-2 font-medium">
+            <li><a href="service.html" class="hover:text-[#0071e3]">جدول أسعار صيانة الآيفون</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="font-extrabold text-sm text-[#1d1d1f] border-b border-[#e5e5ea] pb-2">التواصل</h4>
+          <div class="space-y-2 font-medium">
+            <div>مول اسبانيا بلازا - الشيخ زايد</div>
+            <div class="font-mono font-bold text-[#1d1d1f]">01070455777</div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-[#e5e5ea] text-center font-medium">
+        © 2026 POINT A. جميع الحقوق محفوظة. الشيخ زايد - اسبانيا بلازا مول.
+      </div>
+    </div>
   </footer>
 
 </body>
